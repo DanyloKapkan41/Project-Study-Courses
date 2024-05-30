@@ -1,0 +1,364 @@
+/* Додати цей рядок на початку файлу CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Оновити body для використання нового шрифту */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #002e2e;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+footer a img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-contact, .footer-about {
+    flex: 1;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-about {
+    text-align: right;
+    padding-right: 2em;
+}
+
+main {
+    padding: 1em;
+    flex: 1;
+}
+
+.intro {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.intro-image {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.intro-text {
+    text-align: justify;
+}
+
+.courses {
+    margin-bottom: 2em;
+}
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-card:hover {
+    background-color: #f0f0f0;
+}
+
+.course-card img {
+    width: 75%;
+    height: 75%;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5%;
+    margin-bottom: 1em;
+}
+
+.course-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.course-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.course-image img {
+    width: 400px; /* Задати фіксовану ширину */
+    height: auto; /* Автоматичне масштабування висоти */
+    border-radius: 5%;
+    margin-bottom: 1em;
+}
+
+.course-text {
+    flex: 1;
+}
+
+.course-info p {
+    margin: 0.5em 0;
+}
+
+.course-description {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.registration, .login, .admin-panel {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.registration h2, .login h2, .admin-panel h2 {
+    text-align: center;
+}
+
+.registration label, .login label, .admin-panel label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.registration input, .login input, .admin-panel input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration button, .login button, .admin-panel button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.registration button:hover, .login button:hover, .admin-panel button:hover {
+    background-color: #0056b3;
+}
+
+.course-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 2em;
+}
+
+.course-list h3 {
+    text-align: center;
+}
+
+.course-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 0.5em;
+}
+
+.about-us {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about-content {
+    display: block;
+}
+
+
+.about-image {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info, .profile-courses, .course-purchase {
+    margin-bottom: 2em;
+}
+
+.profile-info h2, .profile-courses h3, .course-purchase h3 {
+    text-align: center;
+}
+
+.profile-info p, .profile-courses ul, .course-purchase form {
+    margin: 0.5em 0;
+}
+
+.profile-courses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-courses ul li {
+    margin-bottom: 0.5em;
+}
+
+.course-purchase form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-purchase form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.course-purchase form select, .course-purchase form input, .course-purchase form button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.course-purchase form button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.course-purchase form button:hover {
+    background-color: #0056b3;
+}
